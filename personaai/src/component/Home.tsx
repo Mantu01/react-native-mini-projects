@@ -2,6 +2,7 @@ import { View, Text, ScrollView, Image, StyleSheet, TouchableOpacity } from 'rea
 import React, { useEffect, useState } from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import apiClient from '../lib/api';
+import { NativeStackScreenProps } from '@react-navigation/native-stack';
 
 interface PersonaCategory {
   key: string;
@@ -10,7 +11,8 @@ interface PersonaCategory {
   image: string;
 }
 
-const Home = ({navigation}) => {
+type HomeScreenProps = NativeStackScreenProps<RootStackParamList, 'Home'>;
+const Home = ({navigation}:HomeScreenProps) => {
   const [person, setPerson] = useState<Record<string, PersonaCategory[]>>({});
   const [keys, setKeys] = useState<string[]>([]);
 
@@ -38,7 +40,7 @@ const Home = ({navigation}) => {
             </Text>
 
             {person[categoryKey]?.map((item) => (
-              <TouchableOpacity onPress={()=>navigation.navigate('chat',{...item})}>
+              <TouchableOpacity onPress={()=>navigation.navigate('Chat',{...item})}>
                 <View key={item.key} style={styles.card}>
                   <Image 
                     source={{ uri: item.image }}

@@ -4,13 +4,13 @@ import Home from './src/component/Home';
 import Chat from './src/component/Chat';
 import { NavigationContainer } from '@react-navigation/native';
 
-const Stack=createStackNavigator();
+const Stack=createStackNavigator<RootStackParamList>();
 
 const StackNavigator=()=>{
   return (
     <Stack.Navigator>
-      <Stack.Screen name='home' component={Home} />
-      <Stack.Screen name='chat' component={Chat} />
+      <Stack.Screen name='Home' component={Home} />
+      <Stack.Screen name='Chat' component={Chat} />
     </Stack.Navigator>
   );
 }

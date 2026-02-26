@@ -1,16 +1,38 @@
-import './global.css';
-import { Text, View } from 'react-native';
-import { SafeAreaProvider } from 'react-native-safe-area-context';
+import './global.css'
 
-function App() {
+import { NavigationContainer } from '@react-navigation/native';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import ColorScreen from './src/screen/Colors';
+import PasswordScreen from './src/screen/Password';
+import { Ionicons } from '@react-native-vector-icons/ionicons';
 
+const Tab = createBottomTabNavigator<RootStackParamList>();
+
+function MyTabs() {
   return (
-    <SafeAreaProvider>
-      <View className="h-screen w-screen flex justify-center items-center bg-green-600" >
-        <Text className="text-9xl text-red-600">Hello</Text>
-      </View>
-    </SafeAreaProvider>
+    <Tab.Navigator
+      screenOptions={({ route }) => ({
+        tabBarIcon: ({ color, size }) => {
+          if(route.name==='Color'){
+            return <Ionicons name='color-palette' color={color} size={size} />
+          }else if(route.name==='Password'){
+            return <Ionicons name='lock-closed'  color={color} size={size} />
+          }
+        },
+        tabBarActiveTintColor: 'tomato',
+        tabBarInactiveTintColor: 'gray',
+      })}
+    >
+      <Tab.Screen name="Color" component={ColorScreen} />
+      <Tab.Screen name="Password" component={PasswordScreen} />
+    </Tab.Navigator>
   );
 }
 
-export default App;
+export default function App() {
+  return (
+    <NavigationContainer>
+      <MyTabs />
+    </NavigationContainer>
+  );
+}

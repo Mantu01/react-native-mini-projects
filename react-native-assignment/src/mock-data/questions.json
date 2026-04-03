@@ -1,0 +1,62 @@
+[
+  {
+    "id": "q1",
+    "questionNumber": 1,
+    "companyId": "1",
+    "companyName": "Google",
+    "companyLogoUrl": "https://www.gstatic.com/images/branding/product/1x/googleg_40dp.png",
+    "text": "Design a system to store and retrieve user data efficiently",
+    "durationMinutes": 15,
+    "completedTodayCount": 1243
+  },
+  {
+    "id": "q2",
+    "questionNumber": 2,
+    "companyId": "2",
+    "companyName": "Amazon",
+    "companyLogoUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
+    "text": "API latency is variable & app is sluggish. How do you design UI safely?",
+    "durationMinutes": 12,
+    "completedTodayCount": 892
+  },
+  {
+    "id": "q3",
+    "questionNumber": 3,
+    "companyId": "3",
+    "companyName": "Microsoft",
+    "companyLogoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/220px-Microsoft_logo.svg.png",
+    "text": "Implement a real-time notification system that scales to millions of users",
+    "durationMinutes": 18,
+    "completedTodayCount": 567
+  },
+  {
+    "id": "q4",
+    "questionNumber": 4,
+    "companyId": "4",
+    "companyName": "Apple",
+    "companyLogoUrl": "https://www.apple.com/ac/structured-data/images/open_graph_logo.png",
+    "text": "Design an audio streaming app with offline capabilities",
+    "durationMinutes": 14,
+    "completedTodayCount": 654
+  },
+  {
+    "id": "q5",
+    "questionNumber": 5,
+    "companyId": "5",
+    "companyName": "Meta",
+    "companyLogoUrl": "https://about.meta.com/en/brand-resources/meta-og-image.jpg",
+    "text": "How would you handle distributed transactions in a multi-service architecture?",
+    "durationMinutes": 16,
+    "completedTodayCount": 421
+  },
+  {
+    "id": "q6",
+    "questionNumber": 6,
+    "companyId": "1",
+    "companyName": "Google",
+    "companyLogoUrl": "https://www.gstatic.com/images/branding/product/1x/googleg_40dp.png",
+    "text": "Design a recommendation engine for e-commerce platforms",
+    "durationMinutes": 20,
+    "completedTodayCount": 789
+  }
+]

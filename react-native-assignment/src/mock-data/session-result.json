@@ -1,0 +1,48 @@
+{
+  "questionId": "q2",
+  "questionText": "API latency is variable & app is sluggish. How do you design UI safely?",
+  "companyName": "Amazon",
+  "companyLogoUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
+  "smartSummary": {
+    "whatWorkedWell": [
+      "Clear understanding of the problem and constraints",
+      "Proposed debouncing and caching strategies upfront",
+      "Discussed user feedback mechanisms for slow requests",
+      "Considered edge cases like network timeouts"
+    ],
+    "overallTakeaways": [
+      "Focus on perceived performance, not just actual latency",
+      "Use skeleton screens and progressive loading",
+      "Implement request cancellation for stale queries",
+      "Monitor and alert on API response time metrics"
+    ]
+  },
+  "keyMoments": [
+    {
+      "timestamp": "00:12",
+      "description": "Interviewer asked about handling slow API responses",
+      "type": "positive"
+    },
+    {
+      "timestamp": "01:37",
+      "description": "Suggested debouncing user input to reduce API calls",
+      "type": "positive"
+    },
+    {
+      "timestamp": "03:22",
+      "description": "Discussion about caching strategies and invalidation",
+      "type": "positive"
+    },
+    {
+      "timestamp": "05:45",
+      "description": "Talked about implementing retry logic with exponential backoff",
+      "type": "positive"
+    },
+    {
+      "timestamp": "07:15",
+      "description": "Covered showing loading states and skeleton screens",
+      "type": "positive"
+    }
+  ],
+  "audioDurationSeconds": 480
+}

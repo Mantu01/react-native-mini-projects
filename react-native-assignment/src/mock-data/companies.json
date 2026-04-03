@@ -1,0 +1,27 @@
+[
+  {
+    "id": "1",
+    "name": "Google",
+    "logoUrl": "https://www.gstatic.com/images/branding/product/1x/googleg_40dp.png"
+  },
+  {
+    "id": "2",
+    "name": "Amazon",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg"
+  },
+  {
+    "id": "3",
+    "name": "Microsoft",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/220px-Microsoft_logo.svg.png"
+  },
+  {
+    "id": "4",
+    "name": "Apple",
+    "logoUrl": "https://www.apple.com/ac/structured-data/images/open_graph_logo.png"
+  },
+  {
+    "id": "5",
+    "name": "Meta",
+    "logoUrl": "https://about.meta.com/en/brand-resources/meta-og-image.jpg"
+  }
+]
